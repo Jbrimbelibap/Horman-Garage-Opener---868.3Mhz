@@ -29,7 +29,7 @@ https://fr.aliexpress.com/item/1005005625251557.html
 
 You will need to solder the new cristal in place of the old one.
 
-The last piece of equipment needed is a rtl-sdr dongle, that's needed to decode the garage code as well as making sure that the modified module works :
+The last piece of equipment needed is a rtl-sdr dongle, that's what we use to find the garage code as well as making sure that the modified module works :
 ![image](https://github.com/Jbrimbelibap/Horman-Garage-Opener---868.3Mhz/assets/90109439/e57c6688-c51e-441c-b5b5-843d8fa87168)
 
 
