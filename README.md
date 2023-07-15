@@ -1,5 +1,5 @@
 # Horman-Garage-Opener---868.3Mhz
-An arduino sketch meant for digispark, that allows you to open your Horman garage. You need a modified 868mhz rf module and a cheap RTL-SDR to decode your garage code.
+An arduino IDE sketch meant for digispark, that allows you to open your Horman garage. You need a modified 868mhz rf module and a cheap RTL-SDR to decode your garage code.
 Also I can't assure you that this code will work on your particular horman garage, but if it doesn't my code is very simple and should be easy enough to adjust.
 This is the kind of remote that this project is able to replace : ![image](https://github.com/Jbrimbelibap/Horman-Garage-Opener---868.3Mhz/assets/90109439/20b7767d-ec8e-48af-87cc-f21b89f90602)
 
@@ -39,6 +39,13 @@ SOFTWARE :
 
 Universal radio hacker to decode your garage code : https://github.com/jopohl/urh 
 Spektrum to verify the frequency of the remote or see if it works at all : https://github.com/pavels/spektrum
+
+In universal radio hacker record your garage keyfob signal, (inside of a project) you should obtain something that looks like this : ![image](https://github.com/Jbrimbelibap/Horman-Garage-Opener---868.3Mhz/assets/90109439/f141b4cd-2f85-4a92-a039-deda32fe0e69)
+The pulse at the start corresponds to the 73ms transmission in the code, followed by a 173ms pause. Let's focus on the code itself :
+![Untitled](https://github.com/Jbrimbelibap/Horman-Garage-Opener---868.3Mhz/assets/90109439/b750b44e-e1d7-44d1-a3fd-d6834e2dc34c)
+This is the start of my code sequence, as you can see it's rather easy to decode. As sequence is 80ms long and starts with a 12ms block, that's how you can spot where a signal starts and ends. Here we use the demodulated view in order to make the decoding clearer.
+Each bit 1 or 0 is composed as 3 pulse length, the pulse length is 471us.
+Just paste your string in the sketch once you have it decoded !
 
 
 
