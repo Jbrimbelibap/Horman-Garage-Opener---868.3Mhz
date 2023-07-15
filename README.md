@@ -1,5 +1,5 @@
 # Horman-Garage-Opener---868.3Mhz
-An arduino IDE sketch meant for digispark, that allows you to open your Horman garage. You need a modified 868mhz rf module and a cheap RTL-SDR to decode your garage code.
+An arduino IDE sketch meant for digispark, that allows you to open your Horman garage (only yours, keep it legal). You need a modified 868mhz rf module and a cheap RTL-SDR to decode your garage code.
 
 
 Also I can't assure you that this code will work on your particular horman garage, but if it doesn't my code is very simple and should be easy enough to adjust.
