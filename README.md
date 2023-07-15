@@ -30,21 +30,40 @@ https://fr.aliexpress.com/item/1005005625251557.html
 You will need to solder the new cristal in place of the old one.
 
 The last piece of equipment needed is a rtl-sdr dongle, that's what we use to find the garage code as well as making sure that the modified module works :
+
 ![image](https://github.com/Jbrimbelibap/Horman-Garage-Opener---868.3Mhz/assets/90109439/e57c6688-c51e-441c-b5b5-843d8fa87168)
 
 
+As far as connection goes, this is very easy. Vcc goes to 5V, GDN goes to GND, and Data goes to P2 (you can change this pin in the sketch)
+
+
 This brings the total cost of this project to 18.5€ for me, although if you already have everything and only need the 868.3Mhz module, then it costs about 3€.
+
+
+
 ######
 SOFTWARE :
+
+
 
 Universal radio hacker to decode your garage code : https://github.com/jopohl/urh 
 Spektrum to verify the frequency of the remote or see if it works at all : https://github.com/pavels/spektrum
 
+
+
+
 In universal radio hacker record your garage keyfob signal, (inside of a project) you should obtain something that looks like this : ![image](https://github.com/Jbrimbelibap/Horman-Garage-Opener---868.3Mhz/assets/90109439/f141b4cd-2f85-4a92-a039-deda32fe0e69)
 The pulse at the start corresponds to the 73ms transmission in the code, followed by a 173ms pause. Let's focus on the code itself :
+
+
+
 ![Untitled](https://github.com/Jbrimbelibap/Horman-Garage-Opener---868.3Mhz/assets/90109439/b750b44e-e1d7-44d1-a3fd-d6834e2dc34c)
-This is the start of my code sequence, as you can see it's rather easy to decode. As sequence is 80ms long and starts with a 12ms block, that's how you can spot where a signal starts and ends. Here we use the demodulated view in order to make the decoding clearer.
+This is the start of my code sequence, as you can see it's rather easy to decode.
+
+A sequence is 80ms long and starts with a 12ms block, that's how you can spot where a signal starts and ends. Here we use the demodulated view in order to make the decoding clearer.
+
 Each bit 1 or 0 is composed as 3 pulse length, the pulse length is 471us.
+
 Just paste your string in the sketch once you have it decoded !
 
 
