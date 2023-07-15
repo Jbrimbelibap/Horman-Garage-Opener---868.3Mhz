@@ -37,8 +37,8 @@ This brings the total cost of this project to 18.5€ for me, although if you al
 ######
 SOFTWARE :
 
-Universal radio hacker to decode your garage code,
-Spektrum to verify the frequency of the remote or see if it works at all
+Universal radio hacker to decode your garage code : https://github.com/jopohl/urh 
+Spektrum to verify the frequency of the remote or see if it works at all : https://github.com/pavels/spektrum
 
 
 
