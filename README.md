@@ -71,7 +71,8 @@ This is the start of my code sequence, as you can see it's rather easy to decode
 
 A sequence is 80ms long and starts with a 12ms block, that's how you can spot where a signal starts and ends. Here we use the demodulated view in order to make the decoding clearer.
 
-Each bit 1 or 0 is composed as 3 pulse length, the pulse length is 471us.
+Each bit 1 or 0 is composed of 3 pulse length, the pulse length that worked for me is 471us. You might have to play for a pulse length between 450 and 520us but I don't think it should be necessary.
+recorded the code transmitted by the module and comparing it to the original is always a good practice in case adjustments need to be made.
 
 Just paste your string in the sketch once you have it decoded !
 
