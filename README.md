@@ -74,6 +74,8 @@ A sequence is 80ms long and starts with a 12ms block, that's how you can spot wh
 Each bit 1 or 0 is composed of 3 pulse length, the pulse length that worked for me is 471us. You might have to play for a pulse length between 450 and 520us but I don't think it should be necessary.
 recorded the code transmitted by the module and comparing it to the original is always a good practice in case adjustments need to be made.
 
+I repurposed some of the code from this repository in my sketch : https://github.com/mcore1976/urh-arduino-cloning-keys
+
 Just paste your string in the sketch once you have it decoded !
 
 
