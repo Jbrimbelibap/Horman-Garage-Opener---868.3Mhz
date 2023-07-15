@@ -56,7 +56,7 @@ void loop() {
   digitalWrite(FS1000A_DATA_PIN, HIGH);
   delayMicroseconds(pulse*25.6);
 
-  for (i = 0; i<sizeof(sequence1); i++) //actual code sequence
+  for (i = 0; i<sizeof(sequence1); i++) // transmission of the sequence containing of code information
    {  
     send(sequence1[i]);
    }
