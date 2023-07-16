@@ -15,17 +15,20 @@ This is the kind of remote that this project is able to replace : ![image](https
 
 ######
 HARDWARE :
-Required hardware : Digispark 
+
+Required hardware : 
+
+- Digispark 
 ![image](https://github.com/Jbrimbelibap/Horman-Garage-Opener---868.3Mhz/assets/90109439/9f8ce798-c65d-41f4-9850-2383a5e9a932)
 
-433mhz module that will be modified : 
+- 433mhz module that will be modified : 
 ![image](https://github.com/Jbrimbelibap/Horman-Garage-Opener---868.3Mhz/assets/90109439/95b8223d-1a3c-4e29-a765-47bad023b55b)
 
 ![image](https://github.com/Jbrimbelibap/Horman-Garage-Opener---868.3Mhz/assets/90109439/78a88073-6790-4b29-88f6-9fa48efb4b6d)
 
 You need this partiticular one. I have gotten it to work with the more popular FS1000A but not reliably at all.
 
-868.35Mhz Cristal : 
+- 868.35Mhz Cristal : 
 ![image](https://github.com/Jbrimbelibap/Horman-Garage-Opener---868.3Mhz/assets/90109439/6494ed71-b2bb-444f-bda3-1127bd520afc)
 
 
@@ -55,8 +58,8 @@ SOFTWARE :
 
 
 
-Universal radio hacker to decode your garage code : https://github.com/jopohl/urh 
-Spektrum to verify the frequency of the remote or see if it works at all : https://github.com/pavels/spektrum
+- Universal radio hacker to decode your garage code : https://github.com/jopohl/urh 
+- Spektrum to verify the frequency of the remote or see if it works at all : https://github.com/pavels/spektrum
 
 
 
